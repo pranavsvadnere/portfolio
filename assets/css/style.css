@@ -11,6 +11,21 @@
     --font-base: "Bai Jamjuree";
 }
 
+
+/* text copy disable */
+
+* {
+  -webkit-touch-callout: none;  
+  -webkit-user-select: none;  
+  -khtml-user-select: none;
+  -moz-user-select: none;  
+  -ms-user-select: none;  
+   user-select: none;  
+}
+
+
+/* end text copy disable */
+
 body {
     /* background-color: var(--color-base2); */
     background-color: #1d1d20;
