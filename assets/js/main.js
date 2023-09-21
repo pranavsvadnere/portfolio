@@ -26,3 +26,23 @@ AOS.init({
   //         $(this).css("width", $(this).attr("aria-valuenow") + '%');
   //     });
   // }, {offset: '80%'});
+
+
+  $(function () {
+		$(".ps-portfolio-col").slice(0, 4).show();
+		$("body").on('click touchstart', '.ps-Load-More', function (e) {
+			e.preventDefault();
+			$(".ps-portfolio-col:hidden").slice(0, 2).slideDown();
+			if ($(".ps-portfolio-col:hidden").length == 0) {
+				$(".ps-Load-More").css('display', 'none');
+			}
+			$('html,body').animate(1000);
+		});
+	});
+
+
+  // jQuery(document).ready(function(){
+  //   jQuery(".ps-Load-More").click(function(){
+  //     alert("test");
+  //   });
+  // });

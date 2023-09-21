@@ -495,3 +495,7 @@ li.timeline-item::before {
 }
 
 }
+
+.ps-portfolio-col{
+  display:none;
+}
