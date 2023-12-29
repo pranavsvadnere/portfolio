@@ -789,6 +789,14 @@
                 }
             }
         });
+
+
+        $(document).ready(function(){
+            // Disable right-click on the entire document
+            $(document).on("contextmenu", function(e){
+                e.preventDefault();
+            });
+        });
 </script>
 
 
